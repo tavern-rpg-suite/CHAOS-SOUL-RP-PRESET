@@ -85,3 +85,6 @@ Trim 🧠 CoT to the minimal 2-line version and/or disable the least-critical al
 
 Adjust temperature per model if needed (defaults (1,00) work for most). Enjoy! 💕
 
+---
+Built over time from bits and pieces I collected while learning. If you recognise your work here, tell me and I'll credit you properly.
+
