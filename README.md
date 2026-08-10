@@ -2,7 +2,7 @@
 
 A flexible, model-agnostic instruction set for immersive, character-driven roleplay: natural pacing, rich sensory detail, consistent logic — and a layered toggle system that scales from heavy budget models up to top-tier ones. 💕
 
-**Version 1.0.1**
+**Version 1.0.2**
 
 ---
 
