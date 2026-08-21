@@ -26,6 +26,17 @@ The result is roleplay that aims to feel **less like a chatbot and more like an 
 
 ---
 
+## 🔧 Prompt Structure
+
+The preset uses SillyTavern's injection positions to separate **long-term rules** from **generation-time reminders**.
+
+Core world, character and behavior rules are placed higher in the prompt, while POV, pacing, continuity and execution rules are reinforced near the end of the context.
+
+Some important rules appear in both locations: detailed at the top and as a short reminder near generation.
+
+The preset also includes its own Regex scripts. They are designed to clean the generated prompt without modifying the original `.jsonl` chat history.
+
+---
 ## ⚙️ What's Inside
 
 ### 🧱 Core
@@ -58,7 +69,7 @@ Enable only what you need:
 - 📌 **SMOOTH PROSE** — reduces repetitive phrasing and stylistic tics
 - 🎲 **SCENE DRIVING FORCE** — introduces controlled scene variation
 - ⚡ **GROUNDED COMPLICATION** — adds plausible complications to keep scenes moving
-- 🌿 **NATURAL HUMAN PROSE** —  Already included by Tavern RPG Suite → RPG Status Bar + Bonds when "Inject the natural-prose writing rules" is enabled. Leave this disabled to avoid duplication.
+- 🌿 **NATURAL HUMAN PROSE** —  Already included by Tavern RPG Suite → [RPG Status Bar + Bonds](https://github.com/tavern-rpg-suite/RPG-Status-Bar-Bonds) when "Inject the natural-prose writing rules" is enabled. Leave this disabled to avoid duplication.
 
 ### 🧩 Generation Layer
 
@@ -67,21 +78,75 @@ Placed close to the end of the chat for stronger influence during generation:
 - 🧠 **CoT / Think** — hidden planning before the response
 - ⛓️ **Jailbreak** — additional framing for adult fictional roleplay
 - 🤝 **Commitment + Confirmation** — helps stubborn models follow the preset
-- 🧹 **Anti-Slop Regex** — removes common AI writing patterns and unwanted formatting
 
 ---
 
-## 🔧 Prompt Structure
+### 🧹 ANTI-SLOP REGEX
 
-The preset uses SillyTavern's injection positions to separate **long-term rules** from **generation-time reminders**.
+A built-in cleanup layer that removes common AI writing clichés, unwanted formatting, and repetitive phrasing from generated text.
 
-Core world, character and behavior rules are placed higher in the prompt, while POV, pacing, continuity and execution rules are reinforced near the end of the context.
+It works in two places at once:
 
-Some important rules appear in both locations: detailed at the top and as a short reminder near generation.
+- 👁️ **Chat Display (`markdownOnly`)** — cleans what you see in the chat.
+- 🧠 **Outgoing Prompt (`promptOnly`)** — cleans what is sent back to the model, so removed phrases do not become part of its conversation history and reinforce themselves.
 
-The preset also includes its own Regex scripts. They are designed to clean the generated prompt without modifying the original `.jsonl` chat history.
+Your original `.jsonl` chat file is **never modified**.  
+Everything is reversible: disable a script and the original text appears again.
 
----
+#### ⚙️ Cleanup Order
+
+The scripts run in a fixed order because some replacements depend on earlier steps:
+
+`P → T → A → B → C → D → Z`
+
+- 🧽 **P — Pre-clean** — removes optional unwanted blocks.
+- 🔤 **T — Typography** — normalises quotes, apostrophes, ellipses, etc.
+- 🩹 **A — Personal Replacements** — applies custom replacements before sentence deletion.
+- 🗑️ **B — Sentence Cleanup** — removes entire cliché sentences.
+- 🔧 **C — In-Sentence Cleanup** — replaces unwanted phrases within sentences.
+- 🚫 **D — Word Cleanup** — removes selected individual words.
+- 🧼 **Z — Final Polish** — repairs punctuation and applies the remaining cleanup scripts.
+
+If you add your own scripts, place them in the appropriate group rather than simply adding them to the end.
+
+#### ⚠️ Global Regex Scripts
+
+The cleanup order in SillyTavern is:
+
+`Global → Preset → Scoped`
+
+#### 🔬 Optional Scripts
+
+Some cleanup rules are **disabled by default** because they can occasionally alter legitimate writing.
+
+These include:
+
+`B6 · B7 · C33 · C34 · C35 · D12 · D13 · D14 · D15 · D16 · D17 · D18`
+
+They are best enabled individually and tested with your own characters.
+
+#### 📝 A Few Notes
+
+- **A2** changes `"A breath."` into a male-oriented line. For female POV, change `He` → `She` in the SillyTavern editor.
+- **Group D** is intentionally case-sensitive, so words at the beginning of sentences are not accidentally altered.
+- **Z1** fixes articles after replacements, such as `an pure` → `a pure`.
+
+#### ✍️ What Regex Does *Not* Try to Fix
+
+Regex is good at catching **specific, repeatable patterns**. It cannot reliably judge whether something is cliché based on context.
+
+Things such as:
+
+- rule-of-three phrasing;
+- predator/prey metaphors;
+- architectural metaphors;
+- forced comparisons to weather or everyday objects;
+- stacked adjectives;
+- explaining the symbolic meaning of an action immediately after describing it;
+- repetitive romantic gestures;
+- animal-like sounds used for human characters.
+
+These are handled by **📌 SMOOTH PROSE** and **✍️ WRITING RULES** instead.
 
 ## 📦 Installation
 
