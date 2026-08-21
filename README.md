@@ -1,90 +1,98 @@
-# 📝 CHAOS & SOUL — UNIVERSAL RP PRESET
+# 🎭 Chaos & Soul — UNIVERSAL RP PRESET
 
-A flexible, model-agnostic instruction set for immersive, character-driven roleplay: natural pacing, rich sensory detail, consistent logic — and a layered toggle system that scales from heavy budget models up to top-tier ones. 💕
+<p align="center">
+<img width="1536" height="1024" alt="fd754dbd-20de-419b-abf4-f61491d2ec32" src="https://github.com/user-attachments/assets/8dd06370-73b1-4f8b-906e-9713bdd7001f" />
+</p>
 
-**Version 1.0.2**
+<p align="center">
+  <strong>🎭 Chaos & Soul</strong>
+</p>
+
+<p align="center">
+  <strong>Download · Import · Play</strong><br>
+  The preset is already configured. Just load it into SillyTavern and start your story.
+</p>
+
+---
+A SillyTavern roleplay preset focused on **character autonomy, believable world behavior, and natural prose**.
+
+Instead of teaching the model to simply “write beautifully”, Chaos & Soul focuses on making characters **behave like people**.
+
+Characters have their own goals, opinions, boundaries and lives. They can disagree, lie, refuse, leave, change their minds or act without waiting for the player. NPCs continue living their lives outside the current scene.
+
+The world also has **information boundaries**: characters only know what they could realistically perceive or learn. No mind-reading, wall-hearing, unexplained name recognition or solving mysteries the player has not revealed.
+
+The result is roleplay that aims to feel **less like a chatbot and more like an unfolding story**.
 
 ---
 
-## 🔗 Integration
+## ⚙️ What's Inside
 
-Works flawlessly as the narrative engine for the **Tavern RPG Suite**. Pair it with the RPG Map Engine, Inventory, and Status Bar for the ultimate text-based RPG experience.
+### 🧱 Core
 
-## 📦 Install
+The main rules always remain active:
 
-1. Download the `CHAOS & SOUL RP PRESET.json` file from this repository.
-2. Open SillyTavern.
-3. Go to the **Chat Completion Presets**.
-4. Click **Import** and select the JSON file.
-5. Apply the preset and enjoy a smarter, more dynamic roleplay experience!
+- **Main System Prompt** — You are the narrator and all characters; the player controls only themselves.
+- **CORE RULES** — Character autonomy, meaningful action in every response, and scenes that keep moving.
+- **NPC GENERAL · NPC DIALOGUE** — NPCs are independent people with their own goals, personalities, and voices.
+- **WORLD RULES** — The world continues without the player; secrets are discovered gradually.
+- **PHYSICAL REALISM** — Physics, anatomy, distance, positioning, and the limits of perception.
+- **ANTI 5D CHESS** — Information must be discovered through interaction, not magically obtained.
+- **POV & ANTI-RECAP · ANTI-ECHO** — Never write for the player or simply repeat their message.
+- **PLOT & IMMERSION** — New characters and developments appear naturally, not on a schedule.
+- **CHARACTER AUTONOMY** — Characters have lives of their own while still feeling like people sharing the scene.
+- **EMOTIONAL DEPTH** — Emotional carryover, contradictions, changing feelings, and the ability to refuse.
+- **WRITING RULES · GEMINI VIBE** — A balance of description and dialogue, sensory detail, and subtext.
+- **NARRATIVE EXECUTION · RESPONSE CONFIG** — Avoids summary-like prose and depersonalizing metaphors.
+- **ENTRY ROTATION** — Varying ways to enter and open a scene.
+- **MICRO-CONTINUITY** — Keeps track of positions, objects, and ongoing physical states.
+- **THIRD PERSON ONLY** — Strict third-person narration.
 
-## ✅ Tested on
-· DeepSeek-V4 (Temperature 1,00) 
-· DeepSeek-flash (Venice) (Temperature 1,00) 
-· Nemotron-3 Super (Temperature 1,00)
-· Gemini-2.5-flash-lite (Temperature 2,00)
-· Gemini 2.5 Pro (Temperature 2,00)
-· Gemini 3.1 Pro-preview (Temperature 2,00)
-· Gemini 3.5 Flash (Temperature 2,00)
-· Claude-Haiku-4.5 (Temperature 2,00)
-· Grok 4 (Temperature 1,00)
-· Kimi K2.6 (Temperature 1,00)
-· MiniMax M2.5 - M2.7 (Temperature 1,00)
-· Qwen 3.6 Plus (Temperature 1,00)
-· Gemma 4 31b (Temperature 2,00)
-· Trinity Large Preview (Temperature 1,00)
-· Mistral Large 3 (Temperature 1,00)
-· Free Models Router (Temperature 0,85)
-(Best with 100k+ context.)
+### 🔘 Optional Toggles
 
+Enable only what you need:
 
-## 🎛️ TOGGLE GUIDE — what each switch does
+- 📏 **LENGTH** — Short / Balanced / Long
+- 🔥 **NSFW SCENE++** — additional pacing and detail for intimate scenes
+- 🛠️ **RESPONSE TUNING** — limits the response to one major action
+- 📌 **SMOOTH PROSE** — reduces repetitive phrasing and stylistic tics
+- 🎲 **SCENE DRIVING FORCE** — introduces controlled scene variation
+- ⚡ **GROUNDED COMPLICATION** — adds plausible complications to keep scenes moving
+- 🌿 **NATURAL HUMAN PROSE** —  Already included by Tavern RPG Suite → RPG Status Bar + Bonds when "Inject the natural-prose writing rules" is enabled. Leave this disabled to avoid duplication.
 
+### 🧩 Generation Layer
 
-🟢 ALWAYS ON — the engine. Leave these.
-🧩 Main System Prompt · 📚 Enhance Definitions · 🥝 CORE RULES · 🤝 NPC GENERAL RULES · 🫀 PHYSICAL REALISM · 👁️‍🗨️ POV & ANTI RECAP · 🔊 NPC SPOKEN DIALOGUE · 🌐 WORLD RULES · 🎭 PLOT & IMMERSION · 📖 NARRATIVE EXECUTION · ♟️ ANTI 5D CHESS · 💬 RESPONSE CONFIGURATION · 🔄 ENTRY ROTATION · 🧠 EMOTIONAL DEPTH · ✍️ WRITING RULES · 🫂 CHARACTER AUTONOMY & PERSONAL REGARD · 🚀 MICRO-CONTINUITY · 💫 GEMINI VIBE · ✨ THIRD PERSON ONLY
+Placed close to the end of the chat for stronger influence during generation:
 
-🔘 OPTIONAL — flip per model / per scene.
-
-⛓️‍💥 Jailbreak Prompt — [DEFAULT: ON] Compact "fiction mode" frame that stops stubborn/strict models from refusing or breaking character. Turn ON only if a model refuses or lectures mid-scene.
-
-🤝 Commitment + ✅ Confirmation (handshake) — [DEFAULT: ON] A two-part injection (a fake prior assistant "oath" + a fake user "format check") that makes the model treat compliance as already-agreed and treats any refusal/softening as a mere FORMAT error. This is the heavy artillery for weak/strict models. TURN OFF on strong models — it makes their output wooden and formulaic. Use together with the Jailbreak.
-
-🏛️ THREE PILLARS — [DEFAULT: ON] Forces every reply to use 2 of 3 layers (action+environment / dialogue+subtext / inner+sensory). Booster for weak models that write flat "talking heads." Strong models do this naturally — leave OFF to avoid over-describing.
-
-🔥 NSFW SCENE++ — [DEFAULT: OFF] Detail booster for intimate scenes (slow pacing, foreplay, vivid sensory, no interruptions). Turn ON when a scene gets intimate, OFF afterward.
-
-🛠️ RESPONSE TUNING — [DEFAULT: OFF] Pacing control: one major action per reply, no meta-asides, no repeated phrases. Turn ON if the model rushes or chains too much.
-
-📏 RESPONSE CAP — [DEFAULT: OFF] Hard 250–300 token limit. Turn ON if replies get too long.
-
-📌 SMOOTH PROSE — [DEFAULT: OFF] Fixes clunky free routers (removes "A pause."/"A beat." tics, overused intensifiers). OFF for clean models (Mistral, Kimi).
-
-
-## 🍳 RECIPES — when to enable what
-
-
-🪶 WEAK / STRICT MODELS (DeepSeek-flash, budget & free routers)
-Max crutches. ON: 🧠 CoT, ⛓️ Jailbreak, 🤝+✅ Handshake, 🏛️ Three Pillars. 📌 Smooth Prose for free OpenRouter routers. Add 🔥 NSFW SCENE++ during intimate scenes only. Enable <think> auto-parse. (This is how DeepSeek-flash-Venice was pushed to full, in-character, leading output.)
-
-🦅 STRONG MODELS (Gemini, Grok, Kimi, Mistral Large, MiniMax)
-Minimal. Keep the always-on core. OFF: 🤝+✅ Handshake (makes them wooden), 🏛️ Three Pillars (over-describe). ⛓️ Jailbreak only if that specific model actually refuses. Light or no prefill. Rule of thumb: smart model → fewer crutches.
-
-🧠 LITE MODELS (Gemini-2.5-flash-lite) 
-Max crutches. ON: 🧠 CoT, ⛓️ Jailbreak, 🤝+✅ Handshake, ✨ Narration: third person only, 📌 Smooth Prose, 🛠️ response tuning, 📏 length · balanced (default).
-
-🔥 INTIMATE / NSFW SCENE
-Turn ON 🔥 NSFW SCENE++ and the explicit prefill (+ ⛓️ Jailbreak / handshake if the model balks). Turn 🔥 OFF again afterward.
-
-🌙 NORMAL / SFW SCENE
-🔥 NSFW SCENE++ OFF; keep the prefill mild or cleared.
-
-🩹 MODEL LOSING THE THREAD
-Trim 🧠 CoT to the minimal 2-line version and/or disable the least-critical always-on blocks (📖 NARRATIVE EXECUTION, 💬 RESPONSE CONFIGURATION, 🧠 EMOTIONAL DEPTH). Less context = better coherence on small models.
-
-
-Adjust temperature per model if needed (defaults (1,00) work for most). Enjoy! 💕
+- 🧠 **CoT / Think** — hidden planning before the response
+- ⛓️ **Jailbreak** — additional framing for adult fictional roleplay
+- 🤝 **Commitment + Confirmation** — helps stubborn models follow the preset
+- 🧹 **Anti-Slop Regex** — removes common AI writing patterns and unwanted formatting
 
 ---
-Built over time from bits and pieces I collected while learning. If you recognise your work here, tell me and I'll credit you properly.
 
+## 🔧 Prompt Structure
+
+The preset uses SillyTavern's injection positions to separate **long-term rules** from **generation-time reminders**.
+
+Core world, character and behavior rules are placed higher in the prompt, while POV, pacing, continuity and execution rules are reinforced near the end of the context.
+
+Some important rules appear in both locations: detailed at the top and as a short reminder near generation.
+
+The preset also includes its own Regex scripts. They are designed to clean the generated prompt without modifying the original `.jsonl` chat history.
+
+---
+
+## 📦 Installation
+
+Import:
+
+`Chaos_and_Soul.json` → **SillyTavern → Chat Completion Presets → Import**
+
+The included Regex scripts are available under:
+
+**Extensions → Regex → Preset Scripts**
+
+If you have global copies of the same scripts enabled, disable them so they don't run twice.
+
+The preset contains an **📝 FAQ** with toggle combinations, model-specific notes and temperature recommendations.
