@@ -44,20 +44,20 @@ The preset also includes its own Regex scripts. They are designed to clean the g
 The main rules always remain active:
 
 - **Main System Prompt** — You are the narrator and all characters; the player controls only themselves.
-- **CORE RULES** — Character autonomy, meaningful action in every response, and scenes that keep moving.
-- **NPC GENERAL · NPC DIALOGUE** — NPCs are independent people with their own goals, personalities, and voices.
-- **WORLD RULES** — The world continues without the player; secrets are discovered gradually.
-- **PHYSICAL REALISM** — Physics, anatomy, distance, positioning, and the limits of perception.
-- **ANTI 5D CHESS** — Information must be discovered through interaction, not magically obtained.
-- **POV & ANTI-RECAP · ANTI-ECHO** — Never write for the player or simply repeat their message.
-- **PLOT & IMMERSION** — New characters and developments appear naturally, not on a schedule.
-- **CHARACTER AUTONOMY** — Characters have lives of their own while still feeling like people sharing the scene.
-- **EMOTIONAL DEPTH** — Emotional carryover, contradictions, changing feelings, and the ability to refuse.
-- **WRITING RULES · GEMINI VIBE** — A balance of description and dialogue, sensory detail, and subtext.
-- **NARRATIVE EXECUTION · RESPONSE CONFIG** — Avoids summary-like prose and depersonalizing metaphors.
-- **ENTRY ROTATION** — Varying ways to enter and open a scene.
-- **MICRO-CONTINUITY** — Keeps track of positions, objects, and ongoing physical states.
-- **THIRD PERSON ONLY** — Strict third-person narration.
+- 🥝 **CORE RULES** — Character autonomy, meaningful action in every response, and scenes that keep moving.
+- 🤝 **NPC GENERAL · NPC DIALOGUE** — NPCs are independent people with their own goals, personalities, and voices.
+- 🌐 **WORLD RULES** — The world continues without the player; secrets are discovered gradually.
+- 🫀 **PHYSICAL REALISM** — Physics, anatomy, distance, positioning, and the limits of perception.
+- ♟️ **ANTI 5D CHESS** — Information must be discovered through interaction, not magically obtained.
+- 👁️‍🗨️ **POV & ANTI-RECAP · ANTI-ECHO** — Never write for the player or simply repeat their message.
+- 🎭 **PLOT & IMMERSION** — New characters and developments appear naturally, not on a schedule.
+- 🫂 **CHARACTER AUTONOMY** — Characters have lives of their own while still feeling like people sharing the scene.
+- 🧠 **EMOTIONAL DEPTH** — Emotional carryover, contradictions, changing feelings, and the ability to refuse.
+- ✍️ **WRITING RULES · GEMINI VIBE** — A balance of description and dialogue, sensory detail, and subtext.
+- 📖 **NARRATIVE EXECUTION · RESPONSE CONFIG** — Avoids summary-like prose and depersonalizing metaphors.
+- 🔄 **ENTRY ROTATION** — Varying ways to enter and open a scene.
+- 🚀 **MICRO-CONTINUITY** — Keeps track of positions, objects, and ongoing physical states.
+- ✨ **THIRD PERSON ONLY** — Strict third-person narration.
 
 ### 🔘 Optional Toggles
 
