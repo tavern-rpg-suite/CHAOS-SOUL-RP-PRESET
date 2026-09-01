@@ -563,34 +563,6 @@
             "forbid_overrides": false
         },
         {
-            "identifier": "65b74234-45bd-46f3-86e4-461bdb25ec09",
-            "system_prompt": false,
-            "enabled": true,
-            "marker": false,
-            "name": "🎲 SCENE DRIVING FORCE",
-            "role": "system",
-            "content": "{{// Scene-engine randomiser adapted from Pura's Director 15.1 (Scene Driving Force). The {{random::}} macro resolves BEFORE the prompt is sent — the model receives ONE option, so all eight cost the tokens of one. }}{{trim}}\n## SCENE DRIVING FORCE\nThis scene is primarily driven by: {{random::Dialogue — what is said, interrupted, or withheld carries the scene.::Action — physical decisions and movement create consequences.::Reaction — characters absorb and recalibrate to what just happened.::Problem — a practical obstacle reveals character through how it is handled.::Social pressure — hierarchy, etiquette, or scrutiny shapes behavior; someone is always performing.::Discovery — noticing or realizing something reshapes the dynamic.::Tension — nothing explodes, but everything is loaded; proximity and silence do the work.::Task — doing something together creates friction, rhythm, and revelation.}}\n- Let the chosen engine carry the most weight; keep the others present but subordinate.\n- Express it through personality and habit. Never name or announce it.",
-            "injection_position": 0,
-            "injection_depth": 4,
-            "injection_order": 100,
-            "injection_trigger": [],
-            "forbid_overrides": false
-        },
-        {
-            "identifier": "091b0fe2-31de-4d30-bd82-09f6e2a937d3",
-            "system_prompt": false,
-            "enabled": false,
-            "marker": false,
-            "name": "⚡ GROUNDED COMPLICATION",
-            "role": "system",
-            "content": "{{// Complication randomiser adapted from Pura's Director 15.1 (Grounded Complication). OFF by default: it forces pressure EVERY turn, which can fight 🎭 PLOT & IMMERSION RULES. Turn it on for a stalled scene, off again once the plot is moving. }}{{trim}}\n## GROUNDED COMPLICATION\nAdd one realistic complication: {{random::Something breaks, runs out, or fails — a tool, resource, access route, or time margin.::Someone's patience, mood, or priorities shift, making them less cooperative.::An information gap opens — someone knows or misunderstands something critical, and correcting it becomes a choice.::A small betrayal — a minor promise broken, help withheld, or credit quietly taken.::An intrusion — a knock, call, or third party arrives with an agenda.::A constraint tightens — less time, privacy, or room to manoeuvre.::Something done earlier comes back — a favour called in, a lie questioned, or an old mess demanding attention.::Someone reveals a need, and asking for help costs them something.}}\nIt must {{random::create urgency.::force competing priorities.::reveal character through the response.::force negotiation or cooperation.::expose a limit or weakness.}}\n- Ground it in established context, prior events, or character; keep it proportional.\n- No new NPCs or external threats; draw it from what is already present.\n- It must create a concrete problem, choice, or negotiation, not mere atmosphere.",
-            "injection_position": 0,
-            "injection_depth": 4,
-            "injection_order": 100,
-            "injection_trigger": [],
-            "forbid_overrides": false
-        },
-        {
             "identifier": "b3872469-d021-49ff-a5f1-ce0ab1936ed4",
             "system_prompt": false,
             "enabled": false,
@@ -845,14 +817,6 @@
                     "enabled": true
                 },
                 {
-                    "identifier": "65b74234-45bd-46f3-86e4-461bdb25ec09",
-                    "enabled": false
-                },
-                {
-                    "identifier": "091b0fe2-31de-4d30-bd82-09f6e2a937d3",
-                    "enabled": false
-                },
-                {
                     "identifier": "narrative_execution",
                     "enabled": true
                 },
@@ -942,7 +906,7 @@
                 },
                 {
                     "identifier": "0fd1fb22-34bf-4577-af26-69c8ba1c7cb0",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "e42b2ef8-7cb2-4db4-950e-0418558592cb",
