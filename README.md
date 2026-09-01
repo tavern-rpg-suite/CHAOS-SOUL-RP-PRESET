@@ -67,8 +67,6 @@ Enable only what you need:
 - 🔥 **NSFW SCENE++** — additional pacing and detail for intimate scenes
 - 🛠️ **RESPONSE TUNING** — limits the response to one major action
 - 📌 **SMOOTH PROSE** — reduces repetitive phrasing and stylistic tics
-- 🎲 **SCENE DRIVING FORCE** — introduces controlled scene variation
-- ⚡ **GROUNDED COMPLICATION** — adds plausible complications to keep scenes moving
 - 🌿 **NATURAL HUMAN PROSE** —  Already included by Tavern RPG Suite → [RPG Status Bar + Bonds](https://github.com/tavern-rpg-suite/RPG-Status-Bar-Bonds) when "Inject the natural-prose writing rules" is enabled. Leave this disabled to avoid duplication.
 
 ### 🧩 Generation Layer
